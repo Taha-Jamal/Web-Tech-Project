@@ -39,8 +39,13 @@ export const LoginPage = () => {
       }
       const responseData = await response.json();
       console.log(responseData);
-      localStorage.setItem('token',responseData.token)
+      console.log(responseData.accessToken);
+      console.log(responseData.refreshToken);
+      
+      localStorage.setItem('accesstoken',responseData.accessToken)
+      localStorage.setItem('refreshtoken',responseData.refreshToken)
       alert('Login successful');
+      window.location.href = "/Dashboard";
     
 
 

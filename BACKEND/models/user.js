@@ -16,7 +16,9 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  // Remove weeklyHoursCompleted and weeklyHours fields
+  refreshToken: {
+    type: String,
+  },
 });
 
 UserSchema.pre("save", async function (next) {

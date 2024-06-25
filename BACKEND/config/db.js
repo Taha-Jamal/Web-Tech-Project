@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb://localhost:27017/Users",
+      //  "mongodb+srv://umer:Ernstormia1!@cluster.bg8edgv.mongodb.net/WEEKLYHOURS",
+      "mongodb://127.0.0.1:27017/WEEKLY-HOURS",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

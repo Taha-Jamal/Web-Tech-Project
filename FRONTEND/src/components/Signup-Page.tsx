@@ -45,6 +45,8 @@ export const Signup = () => {
       const responseData = await response.json();
 
       console.log(responseData);
+      alert('Signup successful');
+      window.location.href = "/";
     } catch (error) {
       console.log("An error occurred:", error);
     }
